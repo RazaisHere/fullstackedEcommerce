@@ -19,7 +19,7 @@ function Signup() {
 
       }
       // ${backendUrl}
-      const response = await axios.post(`${backendUrl}/api/users/signup`, {
+      const response = await axios.post('https://fullstacked-ecommerce-backend.vercel.app/api/users/signup', {
         firstname,
         lastname,
         email,
