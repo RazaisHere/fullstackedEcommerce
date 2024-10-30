@@ -30,7 +30,7 @@ function Navbar() {
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
                 <a
-                    href="http://192.168.18.16:5173"
+                    href="https://fullstacked-ecommerce-admin-1-1.vercel.app/"
                     className="border border-gray-300 p-2 rounded-full flex flex-col items-center gap-1 text-xs"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -98,7 +98,7 @@ function Navbar() {
                         Contact
                     </NavLink>
                     <a
-                        href="http://localhost:5173/"
+                        href="https://fullstacked-ecommerce-admin-1-1.vercel.app/"
                         className="py-3 uppercase pl-4 text-[17px]  font-normal"
                         target="_blank"
                         rel="noopener noreferrer"
