@@ -18,7 +18,11 @@ connectCloudinary()
 //middlewares
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({
+    origin: ["https://fullstacked-ecommerce-1-2.vercel.app", "https://fullstacked-ecommerce-admin-1-1.vercel.app"],
+    credentials: true
+}));
+
 // app.use(cors({
 //     origin: (origin, callback) => {
 //         const allowedOrigins = ["http://192.168.18.16:3000", "http://192.168.18.16:5173"];
