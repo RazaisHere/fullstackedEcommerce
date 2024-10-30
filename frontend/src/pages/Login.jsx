@@ -12,7 +12,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${backendUrl}/api/users/login`, { email, password });
+            const response = await axios.post('https://fullstacked-ecommerce-backend.vercel.app/api/users/login', { email, password });
 
             if (response.data.success) {
                 const { token: newToken, userId } = response.data; // Destructure userId from response
