@@ -53,7 +53,7 @@ function PlaceOrder() {
 
             switch (method) {
                 case "cod": {
-                    const res = await axios.post(`${backendUrl}/api/order/placeOrder`, orderData, {
+                    const res = await axios.post('https://fullstacked-ecommerce-backend.vercel.app/api/order/placeOrder', orderData, {
                         headers: {
                             "Authorization": `Bearer ${token}`,
                         },
@@ -71,7 +71,7 @@ function PlaceOrder() {
                     break;
                 }
                 case 'stripe':{
-                    const responseStripe = await axios.post("http://localhost:5000/api/order/placeOrderStripe", orderData,{
+                    const responseStripe = await axios.post("https://fullstacked-ecommerce-backend.vercel.app/api/order/placeOrderStripe", orderData,{
                         headers:{
                             "Authorization": `Bearer ${token}`,
                         }
