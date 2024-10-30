@@ -180,7 +180,7 @@ export const ShopContextProvider = ({ children }) => {
      
         
         try {
-            const response = await axios.get(`${backendUrl}/admin/products/list`);
+            const response = await axios.get('https://fullstacked-ecommerce-backend.vercel.app/admin/products/list');
           
             setProducts(response.data.products); // Set the fetched products data to state
         } catch (error) {
