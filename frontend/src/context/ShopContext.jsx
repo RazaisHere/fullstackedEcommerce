@@ -58,7 +58,7 @@ export const ShopContextProvider = ({ children }) => {
     
         if (token) {
             try {
-                const response = await axios.post(`${backendUrl}/api/cart/addToCart`, { itemId, size }, { headers: { Authorization: `Bearer ${token}` } });
+                const response = await axios.post('https://fullstacked-ecommerce-backend.vercel.app/api/cart/addToCart', { itemId, size }, { headers: { Authorization: `Bearer ${token}` } });
                 if (response.data.success) {
                     toast.success("Item added");
                     // localStorage.setItem("userId", response.data.user._id);
@@ -98,7 +98,7 @@ export const ShopContextProvider = ({ children }) => {
 
         if (token) {
             try {
-                await axios.post(`${backendUrl}/api/cart/updatecart`, { itemId, size, quantity }, { headers: { Authorization: `Bearer ${token}` } })
+                await axios.post('https://fullstacked-ecommerce-backend.vercel.app/api/cart/updatecart', { itemId, size, quantity }, { headers: { Authorization: `Bearer ${token}` } })
             } catch (error) {
                 console.log(error);
                 toast.error(error.message)
@@ -108,7 +108,7 @@ export const ShopContextProvider = ({ children }) => {
     //
     const getUserCart = async (token) => {
         try {
-            const response = await axios.post(`${backendUrl}/api/cart/getcart`, {}, { headers: { Authorization: `Bearer ${token}` } });
+            const response = await axios.post('https://fullstacked-ecommerce-backend.vercel.app/api/cart/getcart', {}, { headers: { Authorization: `Bearer ${token}` } });
 
             if (response.data.success) {
 
