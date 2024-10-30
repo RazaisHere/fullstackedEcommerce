@@ -13,7 +13,7 @@ function Orders() {
             if (!token) {
                 return null;
             }
-            const response = await axios.get('https://fullstacked-ecommerce-backend.vercel.app/api/order/userorders', {
+            const response = await axios.get('https://fullstacked-ecommerce-backend.vercel.app/api/order/userorders', { 
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }
