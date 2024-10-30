@@ -42,6 +42,9 @@ app.use("/admin/",adminRouter)
 app.use("/admin/products",productRouter)
 app.use("/admin/users",adminUserRouter)
 app.use("/api/order",orderRouter)
+app.get("/",async(req,res)=>{
+ res.send("BACKEND RUNNING");
+})
 
 app.listen(port,()=>{
     console.log(`server is running on port ${port}`)
