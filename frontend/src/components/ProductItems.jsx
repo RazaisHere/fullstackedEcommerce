@@ -8,10 +8,7 @@ export default function ProductItems({ id, image, name, price }) {
   const { currency } = useShop();
 
   return (
-    <Link
-      className="text-gray-700 cursor-pointer reveal-up"
-      to={`/product/${id}`}
-    >
+    <Link className="text-gray-700 cursor-pointer " to={`/product/${id}`}>
       <div className="overflow-hidden">
         <img
           className="hover:scale-110 transition ease-in-out"
