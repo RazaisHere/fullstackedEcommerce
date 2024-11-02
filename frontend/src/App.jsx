@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ReactLenis } from "lenis/react";
-import { gsap } from "gsap";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Product from "./components/Product";
@@ -22,38 +22,6 @@ import Verify from "./pages/Verify";
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  useEffect(() => {
-    const elements = gsap.utils.toArray(".reveal-up");
-
-    elements.forEach((element, index) => {
-      gsap.fromTo(
-        element,
-        {
-          y: 100,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1.5,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: element,
-            start: "top 85%",
-            end: "top 30%",
-            scrub: true,
-            toggleActions: "play none none reverse",
-            onEnter: () => ScrollTrigger.refresh(), // Refresh ScrollTrigger
-          },
-          delay: index * 0.1,
-        }
-      );
-    });
-
-    // Refresh ScrollTrigger after page load to account for smooth scrolling
-    ScrollTrigger.refresh();
-  }, []);
-
   return (
     <ReactLenis root>
       <div

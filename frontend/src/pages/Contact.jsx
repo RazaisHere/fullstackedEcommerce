@@ -35,7 +35,7 @@ function Contact() {
         </div>
       </div>
 
-      <div className="reveal-up">
+      <div className="">
         <Subscribe />
       </div>
     </div>

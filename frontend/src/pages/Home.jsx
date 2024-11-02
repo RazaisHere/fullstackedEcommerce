@@ -13,7 +13,7 @@ function Home() {
       <LatestCollection />
       <BestSellers />
       <Policy />
-      <div className="reveal-up">
+      <div className="">
         <Subscribe />
       </div>
     </div>

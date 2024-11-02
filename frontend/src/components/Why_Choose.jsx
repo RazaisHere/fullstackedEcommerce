@@ -7,7 +7,7 @@ function Why_Choose() {
         <Title text1={"WHY"} text2={"CHOOSE US"} />
       </div>
 
-      <div className="flex flex-col sm:flex-row sm:mb-[60px] reveal-up">
+      <div className="flex flex-col sm:flex-row sm:mb-[60px] ">
         <div className="border px-8 md:px-16 py-8 sm:py-20 flex flex-col gap-5 text-sm">
           <h1 className="font-semibold">Quality Assurance:</h1>
           <p className="text-gray-600 text-xs w-[100%]">

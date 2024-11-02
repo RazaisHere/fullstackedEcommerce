@@ -9,7 +9,7 @@ function About() {
     <div>
       <About_Hero />
       <Why_Choose />
-      <div className="reveal-up">
+      <div className="">
         <Subscribe />
       </div>
     </div>
