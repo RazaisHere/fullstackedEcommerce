@@ -43,11 +43,15 @@ function App() {
             end: "top 30%",
             scrub: true,
             toggleActions: "play none none reverse",
+            onEnter: () => ScrollTrigger.refresh(), // Refresh ScrollTrigger
           },
-          delay: index * 0.1, // Stagger effect for smoother animation
+          delay: index * 0.1,
         }
       );
     });
+
+    // Refresh ScrollTrigger after page load to account for smooth scrolling
+    ScrollTrigger.refresh();
   }, []);
 
   return (
