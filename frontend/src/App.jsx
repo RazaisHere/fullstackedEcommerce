@@ -7,7 +7,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ReactLenis } from "lenis/react";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Product from "./components/Product";
 import { ToastContainer, toast } from "react-toastify";
@@ -18,8 +17,6 @@ import Signup from "./pages/Signup";
 import PlaceOrder from "./pages/PlaceOrder";
 import Orders from "./pages/Orders";
 import Verify from "./pages/Verify";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (
